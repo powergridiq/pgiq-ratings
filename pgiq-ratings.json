@@ -1,0 +1,1284 @@
+{
+  "name": "PowerGridIQ Rating dataset",
+  "description": "Tiered ratings for siting or scheduling a large electricity load across global power markets.",
+  "as_of": "June 2026",
+  "updated": "2026-07-02",
+  "license": "Free to use with attribution to 'PowerGridIQ Rating' (https://powergridiq.com).",
+  "source": "https://powergridiq.com",
+  "count": 67,
+  "markets": [
+    {
+      "id": "ercot",
+      "name": "ERCOT (Texas)",
+      "group": "us",
+      "tier": 1,
+      "tier_name": "Prime",
+      "score": 78,
+      "outlook": "Positive",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 88,
+        "availability": 62,
+        "cost": 85,
+        "momentum": 80,
+        "carbon": 55
+      },
+      "report_url": "https://powergridiq.com/rating/ercot"
+    },
+    {
+      "id": "uae",
+      "name": "United Arab Emirates",
+      "group": "middle_east",
+      "tier": 1,
+      "tier_name": "Prime",
+      "score": 79,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 82,
+        "availability": 70,
+        "cost": 90,
+        "momentum": 80,
+        "carbon": 42
+      },
+      "report_url": "https://powergridiq.com/rating/uae"
+    },
+    {
+      "id": "quebec",
+      "name": "Quebec",
+      "group": "canada",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 74,
+      "outlook": "Positive",
+      "confidence": "Med-High",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 90,
+        "cost": 100,
+        "momentum": 30,
+        "carbon": 100
+      },
+      "report_url": "https://powergridiq.com/rating/quebec"
+    },
+    {
+      "id": "northern-virginia",
+      "name": "Northern Virginia (PJM)",
+      "group": "us",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 58,
+      "outlook": "Negative",
+      "confidence": "High",
+      "under_review": true,
+      "pillars": {
+        "access": 42,
+        "availability": 45,
+        "cost": 70,
+        "momentum": 92,
+        "carbon": 58
+      },
+      "report_url": "https://powergridiq.com/rating/northern-virginia"
+    },
+    {
+      "id": "us-southeast",
+      "name": "US Southeast (Atlanta)",
+      "group": "us",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 69,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 65,
+        "availability": 60,
+        "cost": 72,
+        "momentum": 88,
+        "carbon": 60
+      },
+      "report_url": "https://powergridiq.com/rating/us-southeast"
+    },
+    {
+      "id": "norway",
+      "name": "Norway",
+      "group": "europe",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 75,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 85,
+        "cost": 90,
+        "momentum": 60,
+        "carbon": 99
+      },
+      "report_url": "https://powergridiq.com/rating/norway"
+    },
+    {
+      "id": "ontario",
+      "name": "Ontario",
+      "group": "canada",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 69,
+      "outlook": "Negative",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 60,
+        "availability": 58,
+        "cost": 92,
+        "momentum": 58,
+        "carbon": 88
+      },
+      "report_url": "https://powergridiq.com/rating/ontario"
+    },
+    {
+      "id": "pacific-northwest",
+      "name": "Pacific Northwest",
+      "group": "us",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 75,
+      "outlook": "Negative",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 83,
+        "cost": 90,
+        "momentum": 70,
+        "carbon": 88
+      },
+      "report_url": "https://powergridiq.com/rating/pacific-northwest"
+    },
+    {
+      "id": "brazil",
+      "name": "Brazil (Sao Paulo)",
+      "group": "latam",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 72,
+      "outlook": "Positive",
+      "confidence": "Low",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 70,
+        "cost": 88,
+        "momentum": 70,
+        "carbon": 86
+      },
+      "report_url": "https://powergridiq.com/rating/brazil"
+    },
+    {
+      "id": "india",
+      "name": "India",
+      "group": "asia",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 61,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 55,
+        "cost": 72,
+        "momentum": 82,
+        "carbon": 0
+      },
+      "report_url": "https://powergridiq.com/rating/india"
+    },
+    {
+      "id": "germany",
+      "name": "Germany",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 54,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 45,
+        "availability": 58,
+        "cost": 45,
+        "momentum": 80,
+        "carbon": 46
+      },
+      "report_url": "https://powergridiq.com/rating/germany"
+    },
+    {
+      "id": "ireland",
+      "name": "Ireland (Dublin)",
+      "group": "europe",
+      "tier": 5,
+      "tier_name": "Largely closed",
+      "score": 37,
+      "outlook": "Positive",
+      "confidence": "High",
+      "under_review": true,
+      "pillars": {
+        "access": 22,
+        "availability": 38,
+        "cost": 39,
+        "momentum": 55,
+        "carbon": 54
+      },
+      "report_url": "https://powergridiq.com/rating/ireland"
+    },
+    {
+      "id": "desert-southwest",
+      "name": "Desert Southwest (Phoenix)",
+      "group": "us",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 72,
+      "outlook": "Positive",
+      "confidence": "Med-High",
+      "under_review": false,
+      "pillars": {
+        "access": 68,
+        "availability": 62,
+        "cost": 80,
+        "momentum": 85,
+        "carbon": 70
+      },
+      "report_url": "https://powergridiq.com/rating/desert-southwest"
+    },
+    {
+      "id": "spp",
+      "name": "SPP (Southwest Power Pool)",
+      "group": "us",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 69,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 65,
+        "availability": 65,
+        "cost": 90,
+        "momentum": 50,
+        "carbon": 58
+      },
+      "report_url": "https://powergridiq.com/rating/spp"
+    },
+    {
+      "id": "miso",
+      "name": "MISO (Midwest)",
+      "group": "us",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 64,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 50,
+        "availability": 55,
+        "cost": 88,
+        "momentum": 70,
+        "carbon": 52
+      },
+      "report_url": "https://powergridiq.com/rating/miso"
+    },
+    {
+      "id": "caiso",
+      "name": "CAISO (California)",
+      "group": "us",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 56,
+      "outlook": "Negative",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 45,
+        "availability": 48,
+        "cost": 68,
+        "momentum": 70,
+        "carbon": 68
+      },
+      "report_url": "https://powergridiq.com/rating/caiso"
+    },
+    {
+      "id": "nyiso",
+      "name": "NYISO (New York)",
+      "group": "us",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 55,
+      "outlook": "Negative",
+      "confidence": "High",
+      "under_review": true,
+      "pillars": {
+        "access": 42,
+        "availability": 50,
+        "cost": 71,
+        "momentum": 55,
+        "carbon": 73
+      },
+      "report_url": "https://powergridiq.com/rating/nyiso"
+    },
+    {
+      "id": "isone",
+      "name": "ISO New England",
+      "group": "us",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 53,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 52,
+        "availability": 50,
+        "cost": 60,
+        "momentum": 45,
+        "carbon": 63
+      },
+      "report_url": "https://powergridiq.com/rating/isone"
+    },
+    {
+      "id": "british-columbia",
+      "name": "British Columbia",
+      "group": "canada",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 75,
+      "outlook": "Positive",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 68,
+        "availability": 80,
+        "cost": 95,
+        "momentum": 42,
+        "carbon": 99
+      },
+      "report_url": "https://powergridiq.com/rating/british-columbia"
+    },
+    {
+      "id": "manitoba",
+      "name": "Manitoba",
+      "group": "canada",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 73,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 68,
+        "availability": 70,
+        "cost": 98,
+        "momentum": 35,
+        "carbon": 99
+      },
+      "report_url": "https://powergridiq.com/rating/manitoba"
+    },
+    {
+      "id": "alberta",
+      "name": "Alberta",
+      "group": "canada",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 66,
+      "outlook": "Positive",
+      "confidence": "Med-High",
+      "under_review": false,
+      "pillars": {
+        "access": 75,
+        "availability": 62,
+        "cost": 65,
+        "momentum": 60,
+        "carbon": 62
+      },
+      "report_url": "https://powergridiq.com/rating/alberta"
+    },
+    {
+      "id": "newfoundland",
+      "name": "Newfoundland & Labrador",
+      "group": "canada",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 61,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 52,
+        "availability": 55,
+        "cost": 93,
+        "momentum": 22,
+        "carbon": 99
+      },
+      "report_url": "https://powergridiq.com/rating/newfoundland"
+    },
+    {
+      "id": "saskatchewan",
+      "name": "Saskatchewan",
+      "group": "canada",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 48,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 62,
+        "availability": 52,
+        "cost": 50,
+        "momentum": 25,
+        "carbon": 11
+      },
+      "report_url": "https://powergridiq.com/rating/saskatchewan"
+    },
+    {
+      "id": "new-brunswick",
+      "name": "New Brunswick",
+      "group": "canada",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 53,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 62,
+        "availability": 52,
+        "cost": 58,
+        "momentum": 25,
+        "carbon": 57
+      },
+      "report_url": "https://powergridiq.com/rating/new-brunswick"
+    },
+    {
+      "id": "nova-scotia",
+      "name": "Nova Scotia",
+      "group": "canada",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 43,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 48,
+        "cost": 30,
+        "momentum": 22,
+        "carbon": 16
+      },
+      "report_url": "https://powergridiq.com/rating/nova-scotia"
+    },
+    {
+      "id": "sweden",
+      "name": "Sweden",
+      "group": "europe",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 77,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 70,
+        "availability": 75,
+        "cost": 92,
+        "momentum": 60,
+        "carbon": 99
+      },
+      "report_url": "https://powergridiq.com/rating/sweden"
+    },
+    {
+      "id": "france",
+      "name": "France",
+      "group": "europe",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 69,
+      "outlook": "Positive",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 68,
+        "availability": 78,
+        "cost": 56,
+        "momentum": 72,
+        "carbon": 95
+      },
+      "report_url": "https://powergridiq.com/rating/france"
+    },
+    {
+      "id": "finland",
+      "name": "Finland",
+      "group": "europe",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 69,
+      "outlook": "Positive",
+      "confidence": "Med-High",
+      "under_review": false,
+      "pillars": {
+        "access": 72,
+        "availability": 70,
+        "cost": 68,
+        "momentum": 55,
+        "carbon": 90
+      },
+      "report_url": "https://powergridiq.com/rating/finland"
+    },
+    {
+      "id": "spain",
+      "name": "Spain",
+      "group": "europe",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 66,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 65,
+        "availability": 72,
+        "cost": 62,
+        "momentum": 58,
+        "carbon": 82
+      },
+      "report_url": "https://powergridiq.com/rating/spain"
+    },
+    {
+      "id": "portugal",
+      "name": "Portugal",
+      "group": "europe",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 64,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 68,
+        "availability": 68,
+        "cost": 62,
+        "momentum": 50,
+        "carbon": 78
+      },
+      "report_url": "https://powergridiq.com/rating/portugal"
+    },
+    {
+      "id": "austria",
+      "name": "Austria",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 58,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 58,
+        "cost": 64,
+        "momentum": 35,
+        "carbon": 88
+      },
+      "report_url": "https://powergridiq.com/rating/austria"
+    },
+    {
+      "id": "denmark",
+      "name": "Denmark",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 57,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 48,
+        "cost": 70,
+        "momentum": 45,
+        "carbon": 82
+      },
+      "report_url": "https://powergridiq.com/rating/denmark"
+    },
+    {
+      "id": "belgium",
+      "name": "Belgium",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 56,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 55,
+        "cost": 64,
+        "momentum": 40,
+        "carbon": 80
+      },
+      "report_url": "https://powergridiq.com/rating/belgium"
+    },
+    {
+      "id": "switzerland",
+      "name": "Switzerland",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 54,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 50,
+        "availability": 58,
+        "cost": 56,
+        "momentum": 35,
+        "carbon": 95
+      },
+      "report_url": "https://powergridiq.com/rating/switzerland"
+    },
+    {
+      "id": "czech-republic",
+      "name": "Czech Republic",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 52,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 58,
+        "cost": 52,
+        "momentum": 35,
+        "carbon": 44
+      },
+      "report_url": "https://powergridiq.com/rating/czech-republic"
+    },
+    {
+      "id": "romania",
+      "name": "Romania",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 52,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 58,
+        "cost": 50,
+        "momentum": 35,
+        "carbon": 66
+      },
+      "report_url": "https://powergridiq.com/rating/romania"
+    },
+    {
+      "id": "lithuania",
+      "name": "Lithuania",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 52,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 50,
+        "cost": 58,
+        "momentum": 30,
+        "carbon": 71
+      },
+      "report_url": "https://powergridiq.com/rating/lithuania"
+    },
+    {
+      "id": "italy",
+      "name": "Italy",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 51,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 52,
+        "availability": 55,
+        "cost": 42,
+        "momentum": 55,
+        "carbon": 60
+      },
+      "report_url": "https://powergridiq.com/rating/italy"
+    },
+    {
+      "id": "poland",
+      "name": "Poland",
+      "group": "europe",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 50,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 58,
+        "cost": 42,
+        "momentum": 45,
+        "carbon": 11
+      },
+      "report_url": "https://powergridiq.com/rating/poland"
+    },
+    {
+      "id": "latvia",
+      "name": "Latvia",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 49,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 52,
+        "availability": 48,
+        "cost": 55,
+        "momentum": 22,
+        "carbon": 84
+      },
+      "report_url": "https://powergridiq.com/rating/latvia"
+    },
+    {
+      "id": "slovakia",
+      "name": "Slovakia",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 48,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 50,
+        "cost": 40,
+        "momentum": 25,
+        "carbon": 84
+      },
+      "report_url": "https://powergridiq.com/rating/slovakia"
+    },
+    {
+      "id": "greece",
+      "name": "Greece",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 47,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 55,
+        "cost": 40,
+        "momentum": 30,
+        "carbon": 53
+      },
+      "report_url": "https://powergridiq.com/rating/greece"
+    },
+    {
+      "id": "hungary",
+      "name": "Hungary",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 47,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 50,
+        "cost": 40,
+        "momentum": 30,
+        "carbon": 71
+      },
+      "report_url": "https://powergridiq.com/rating/hungary"
+    },
+    {
+      "id": "bulgaria",
+      "name": "Bulgaria",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 47,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 55,
+        "cost": 42,
+        "momentum": 25,
+        "carbon": 47
+      },
+      "report_url": "https://powergridiq.com/rating/bulgaria"
+    },
+    {
+      "id": "estonia",
+      "name": "Estonia",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 47,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 48,
+        "cost": 50,
+        "momentum": 28,
+        "carbon": 28
+      },
+      "report_url": "https://powergridiq.com/rating/estonia"
+    },
+    {
+      "id": "croatia",
+      "name": "Croatia",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 46,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 52,
+        "availability": 48,
+        "cost": 45,
+        "momentum": 22,
+        "carbon": 71
+      },
+      "report_url": "https://powergridiq.com/rating/croatia"
+    },
+    {
+      "id": "great-britain",
+      "name": "Great Britain",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 44,
+      "outlook": "Positive",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 38,
+        "availability": 45,
+        "cost": 20,
+        "momentum": 82,
+        "carbon": 78
+      },
+      "report_url": "https://powergridiq.com/rating/great-britain"
+    },
+    {
+      "id": "slovenia",
+      "name": "Slovenia",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 43,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 52,
+        "availability": 45,
+        "cost": 38,
+        "momentum": 22,
+        "carbon": 67
+      },
+      "report_url": "https://powergridiq.com/rating/slovenia"
+    },
+    {
+      "id": "netherlands",
+      "name": "Netherlands",
+      "group": "europe",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 41,
+      "outlook": "Negative",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 25,
+        "availability": 40,
+        "cost": 40,
+        "momentum": 70,
+        "carbon": 52
+      },
+      "report_url": "https://powergridiq.com/rating/netherlands"
+    },
+    {
+      "id": "saudi-arabia",
+      "name": "Saudi Arabia",
+      "group": "middle_east",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 74,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 78,
+        "availability": 70,
+        "cost": 95,
+        "momentum": 58,
+        "carbon": 12
+      },
+      "report_url": "https://powergridiq.com/rating/saudi-arabia"
+    },
+    {
+      "id": "qatar",
+      "name": "Qatar",
+      "group": "middle_east",
+      "tier": 2,
+      "tier_name": "Strong",
+      "score": 66,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 68,
+        "availability": 62,
+        "cost": 92,
+        "momentum": 38,
+        "carbon": 30
+      },
+      "report_url": "https://powergridiq.com/rating/qatar"
+    },
+    {
+      "id": "egypt",
+      "name": "Egypt",
+      "group": "middle_east",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 61,
+      "outlook": "Positive",
+      "confidence": "Low",
+      "under_review": false,
+      "pillars": {
+        "access": 65,
+        "availability": 58,
+        "cost": 78,
+        "momentum": 35,
+        "carbon": 35
+      },
+      "report_url": "https://powergridiq.com/rating/egypt"
+    },
+    {
+      "id": "kuwait",
+      "name": "Kuwait",
+      "group": "middle_east",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 60,
+      "outlook": "Stable",
+      "confidence": "Low",
+      "under_review": false,
+      "pillars": {
+        "access": 60,
+        "availability": 58,
+        "cost": 95,
+        "momentum": 22,
+        "carbon": 2
+      },
+      "report_url": "https://powergridiq.com/rating/kuwait"
+    },
+    {
+      "id": "turkey",
+      "name": "Turkey",
+      "group": "middle_east",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 54,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 62,
+        "availability": 55,
+        "cost": 58,
+        "momentum": 35,
+        "carbon": 39
+      },
+      "report_url": "https://powergridiq.com/rating/turkey"
+    },
+    {
+      "id": "israel",
+      "name": "Israel",
+      "group": "middle_east",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 50,
+      "outlook": "Stable",
+      "confidence": "Low",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 50,
+        "cost": 55,
+        "momentum": 35,
+        "carbon": 35
+      },
+      "report_url": "https://powergridiq.com/rating/israel"
+    },
+    {
+      "id": "iraq",
+      "name": "Iraq",
+      "group": "middle_east",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 46,
+      "outlook": "Stable",
+      "confidence": "Low",
+      "under_review": false,
+      "pillars": {
+        "access": 45,
+        "availability": 30,
+        "cost": 88,
+        "momentum": 18,
+        "carbon": 11
+      },
+      "report_url": "https://powergridiq.com/rating/iraq"
+    },
+    {
+      "id": "chile",
+      "name": "Chile",
+      "group": "latam",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 57,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 60,
+        "availability": 60,
+        "cost": 58,
+        "momentum": 45,
+        "carbon": 56
+      },
+      "report_url": "https://powergridiq.com/rating/chile"
+    },
+    {
+      "id": "uruguay",
+      "name": "Uruguay",
+      "group": "latam",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 56,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 62,
+        "availability": 55,
+        "cost": 58,
+        "momentum": 30,
+        "carbon": 97
+      },
+      "report_url": "https://powergridiq.com/rating/uruguay"
+    },
+    {
+      "id": "colombia",
+      "name": "Colombia",
+      "group": "latam",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 55,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 55,
+        "cost": 60,
+        "momentum": 35,
+        "carbon": 77
+      },
+      "report_url": "https://powergridiq.com/rating/colombia"
+    },
+    {
+      "id": "argentina",
+      "name": "Argentina",
+      "group": "latam",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 54,
+      "outlook": "Positive",
+      "confidence": "Low",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 55,
+        "cost": 58,
+        "momentum": 35,
+        "carbon": 53
+      },
+      "report_url": "https://powergridiq.com/rating/argentina"
+    },
+    {
+      "id": "costa-rica",
+      "name": "Costa Rica",
+      "group": "latam",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 51,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 45,
+        "cost": 55,
+        "momentum": 25,
+        "carbon": 100
+      },
+      "report_url": "https://powergridiq.com/rating/costa-rica"
+    },
+    {
+      "id": "japan",
+      "name": "Japan",
+      "group": "asia",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 50,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 55,
+        "availability": 58,
+        "cost": 25,
+        "momentum": 70,
+        "carbon": 36
+      },
+      "report_url": "https://powergridiq.com/rating/japan"
+    },
+    {
+      "id": "south-africa",
+      "name": "South Africa",
+      "group": "africa",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 56,
+      "outlook": "Positive",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 50,
+        "cost": 70,
+        "momentum": 50,
+        "carbon": 16
+      },
+      "report_url": "https://powergridiq.com/rating/south-africa"
+    },
+    {
+      "id": "new-zealand",
+      "name": "New Zealand",
+      "group": "oceania",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 55,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 60,
+        "availability": 55,
+        "cost": 58,
+        "momentum": 30,
+        "carbon": 91
+      },
+      "report_url": "https://powergridiq.com/rating/new-zealand"
+    },
+    {
+      "id": "australia",
+      "name": "Australia (NEM)",
+      "group": "oceania",
+      "tier": 3,
+      "tier_name": "Workable",
+      "score": 54,
+      "outlook": "Positive",
+      "confidence": "Med-High",
+      "under_review": false,
+      "pillars": {
+        "access": 58,
+        "availability": 58,
+        "cost": 45,
+        "momentum": 62,
+        "carbon": 34
+      },
+      "report_url": "https://powergridiq.com/rating/australia"
+    },
+    {
+      "id": "taiwan",
+      "name": "Taiwan",
+      "group": "asia",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 39,
+      "outlook": "Stable",
+      "confidence": "Med",
+      "under_review": false,
+      "pillars": {
+        "access": 45,
+        "availability": 40,
+        "cost": 25,
+        "momentum": 45,
+        "carbon": 43
+      },
+      "report_url": "https://powergridiq.com/rating/taiwan"
+    },
+    {
+      "id": "singapore",
+      "name": "Singapore",
+      "group": "asia",
+      "tier": 4,
+      "tier_name": "Constrained",
+      "score": 38,
+      "outlook": "Stable",
+      "confidence": "High",
+      "under_review": false,
+      "pillars": {
+        "access": 35,
+        "availability": 40,
+        "cost": 25,
+        "momentum": 60,
+        "carbon": 42
+      },
+      "report_url": "https://powergridiq.com/rating/singapore"
+    }
+  ]
+}
