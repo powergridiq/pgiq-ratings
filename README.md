@@ -1,51 +1,55 @@
-# PowerGridIQ Rating dataset
+---
+license: cc-by-4.0
+language:
+  - en
+pretty_name: PowerGridIQ Rating dataset (v2, with reliability overlay)
+tags:
+  - energy
+  - electricity
+  - power-grid
+  - data-center
+  - reliability
+  - carbon
+  - cost
+  - ai-infrastructure
+  - site-selection
+size_categories:
+  - n<1K
+configs:
+  - config_name: default
+    data_files: pgiq-ratings.csv
+---
 
-Tiered ratings and five-pillar scores for **67 global power markets**, for deciding where to site or when to schedule a large new electricity load (data centers, AI clusters, industrial load).
+# PowerGridIQ Rating dataset (v2)
 
-This is the open dataset behind [PowerGridIQ](https://powergridiq.com). The rating is a proprietary, directional screen; the underlying pillar evidence is drawn from public operator and regulator sources, and some inputs are modelled.
+Tiered ratings and five-pillar scores, now with a **reliability overlay**, for **72 global power markets and sub-regions**, for deciding where to site or when to schedule a large new electricity load (data centers, AI clusters, industrial load).
 
-## Files
+This is the open dataset behind [PowerGridIQ](https://powergridiq.com). The rating is a proprietary, directional screen; pillar evidence is drawn from public operator and regulator sources, and some inputs are modelled.
 
-- `pgiq-ratings.csv` — one row per market, flat columns (easiest for spreadsheets and pandas).
-- `pgiq-ratings.json` — the same data with nested pillar scores and dataset metadata (name, as_of, updated, license, count).
+## v2: reliability overlay and two scores
 
-## Schema
+- `fundamentals` is the five-pillar score (Access, Availability, Cost, Momentum, Carbon).
+- `pgiq_rating` is the reliability-adjusted rating: `fundamentals` minus a cited reliability dock for delivery-reliability and forward firm-capacity risk.
+- Tier 1 (Prime) is relative. Current Prime markets: **Sweden North, United Arab Emirates, Norway.**
+- Sub-regions are rated where a country's internal divergence is decision-relevant (Germany, Japan, Sweden, Australia); country overviews are excluded.
 
-Each market has:
+## Columns
 
-| Field | Meaning |
-| --- | --- |
-| `id` | Stable market slug (e.g. `ercot`, `quebec`, `sweden`). |
-| `name` | Display name. |
-| `group` | Region group (`us`, `canada`, `europe`, `middle_east`, `latam`, `asia`, `oceania`, `africa`). |
-| `tier` | 1 (Prime) to 5 (Largely closed). |
-| `tier_name` | Text label for the tier. |
-| `score` | Overall PGIQ score, 0 to 100. |
-| `outlook` | Positive, Stable, or Negative. |
-| `confidence` | Confidence in the read (Low to High). |
-| `under_review` | Whether the market is currently under rating review. |
-| `access`, `availability`, `cost`, `momentum`, `carbon` | The five pillar scores, 0 to 100. |
-| `report_url` | Link to the full market report with evidence and sources. |
+`id`, `name`, `group`, `parent`, `tier`, `tier_name`, `pgiq_rating`, `fundamentals`, `reliability_dock`, `reliability_assessed`, `reliability_confidence`, `delivery_transmission`, `delivery_distribution`, `forward_capacity`, `outlook`, `under_review`, `access`, `availability`, `cost`, `momentum`, `carbon`, `report_url`, `as_of`.
 
-Default pillar weights: Access 30, Availability 25, Cost 25, Momentum 15, Carbon 5. A higher pillar score is better (cheaper power, more available capacity, easier access, more revealed build, cleaner grid).
-
-## License
-
-Released under **Creative Commons Attribution 4.0 (CC BY 4.0)**. You may use, share, and adapt the data, including commercially, as long as you credit the source.
-
-Attribute as: **PowerGridIQ Rating (https://powergridiq.com)**.
-
-## Example
+## Load it
 
 ```python
-import pandas as pd
-df = pd.read_csv("pgiq-ratings.csv")
-
-# Best carbon-light markets: high carbon pillar, workable tier or better
-clean = df[(df.tier <= 2)].sort_values("carbon", ascending=False)
-print(clean[["name", "tier", "score", "carbon"]].head(10))
+from datasets import load_dataset
+ds = load_dataset("PGIQ/pgiq-ratings")
+df = ds["train"].to_pandas()
+print(df[df.tier == 1][["name", "pgiq_rating", "fundamentals", "reliability_dock"]])
 ```
+
+## License and attribution
+
+Creative Commons Attribution 4.0 (CC BY 4.0). Free to use, share, and adapt, including commercially, with credit to **PowerGridIQ Rating (https://powergridiq.com)**.
 
 ## Source and updates
 
-Maintained from [powergridiq.com](https://powergridiq.com). A live JSON copy is served at `https://powergridiq.com/data/pgiq-ratings.json`, and a full read-only API (ratings, live grid signals, best-market decisions) is documented at [powergridiq.com/build](https://powergridiq.com/build). Ratings change over time; the `updated` field in the JSON records the last refresh.
+Maintained from [powergridiq.com](https://powergridiq.com). Live JSON: `https://powergridiq.com/data/pgiq-ratings.json`. Methodology: [powergridiq.com/methodology](https://powergridiq.com/methodology). The `as_of` field records the refresh date.

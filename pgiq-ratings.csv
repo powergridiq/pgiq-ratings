@@ -1,68 +1,73 @@
-id,name,group,tier,tier_name,score,outlook,confidence,under_review,access,availability,cost,momentum,carbon,report_url
-ercot,ERCOT (Texas),us,1,Prime,78,Positive,High,False,88,62,85,80,55,https://powergridiq.com/rating/ercot
-uae,United Arab Emirates,middle_east,1,Prime,79,Positive,Med,False,82,70,90,80,42,https://powergridiq.com/rating/uae
-quebec,Quebec,canada,2,Strong,74,Positive,Med-High,False,55,90,100,30,100,https://powergridiq.com/rating/quebec
-northern-virginia,Northern Virginia (PJM),us,2,Strong,58,Negative,High,True,42,45,70,92,58,https://powergridiq.com/rating/northern-virginia
-us-southeast,US Southeast (Atlanta),us,2,Strong,69,Positive,Med,False,65,60,72,88,60,https://powergridiq.com/rating/us-southeast
-norway,Norway,europe,2,Strong,75,Stable,High,False,58,85,90,60,99,https://powergridiq.com/rating/norway
-ontario,Ontario,canada,2,Strong,69,Negative,High,False,60,58,92,58,88,https://powergridiq.com/rating/ontario
-pacific-northwest,Pacific Northwest,us,2,Strong,75,Negative,High,False,55,83,90,70,88,https://powergridiq.com/rating/pacific-northwest
-brazil,Brazil (Sao Paulo),latam,2,Strong,72,Positive,Low,False,58,70,88,70,86,https://powergridiq.com/rating/brazil
-india,India,asia,3,Workable,61,Positive,Med,False,55,55,72,82,0,https://powergridiq.com/rating/india
-germany,Germany,europe,3,Workable,54,Stable,High,False,45,58,45,80,46,https://powergridiq.com/rating/germany
-ireland,Ireland (Dublin),europe,5,Largely closed,37,Positive,High,True,22,38,39,55,54,https://powergridiq.com/rating/ireland
-desert-southwest,Desert Southwest (Phoenix),us,2,Strong,72,Positive,Med-High,False,68,62,80,85,70,https://powergridiq.com/rating/desert-southwest
-spp,SPP (Southwest Power Pool),us,2,Strong,69,Positive,Med,False,65,65,90,50,58,https://powergridiq.com/rating/spp
-miso,MISO (Midwest),us,2,Strong,64,Positive,Med,False,50,55,88,70,52,https://powergridiq.com/rating/miso
-caiso,CAISO (California),us,3,Workable,56,Negative,High,False,45,48,68,70,68,https://powergridiq.com/rating/caiso
-nyiso,NYISO (New York),us,3,Workable,55,Negative,High,True,42,50,71,55,73,https://powergridiq.com/rating/nyiso
-isone,ISO New England,us,3,Workable,53,Stable,High,False,52,50,60,45,63,https://powergridiq.com/rating/isone
-british-columbia,British Columbia,canada,2,Strong,75,Positive,High,False,68,80,95,42,99,https://powergridiq.com/rating/british-columbia
-manitoba,Manitoba,canada,2,Strong,73,Stable,High,False,68,70,98,35,99,https://powergridiq.com/rating/manitoba
-alberta,Alberta,canada,2,Strong,66,Positive,Med-High,False,75,62,65,60,62,https://powergridiq.com/rating/alberta
-newfoundland,Newfoundland & Labrador,canada,3,Workable,61,Stable,Med,False,52,55,93,22,99,https://powergridiq.com/rating/newfoundland
-saskatchewan,Saskatchewan,canada,4,Constrained,48,Stable,Med,False,62,52,50,25,11,https://powergridiq.com/rating/saskatchewan
-new-brunswick,New Brunswick,canada,3,Workable,53,Stable,High,False,62,52,58,25,57,https://powergridiq.com/rating/new-brunswick
-nova-scotia,Nova Scotia,canada,4,Constrained,43,Stable,High,False,58,48,30,22,16,https://powergridiq.com/rating/nova-scotia
-sweden,Sweden,europe,2,Strong,77,Stable,High,False,70,75,92,60,99,https://powergridiq.com/rating/sweden
-france,France,europe,2,Strong,69,Positive,High,False,68,78,56,72,95,https://powergridiq.com/rating/france
-finland,Finland,europe,2,Strong,69,Positive,Med-High,False,72,70,68,55,90,https://powergridiq.com/rating/finland
-spain,Spain,europe,2,Strong,66,Positive,Med,False,65,72,62,58,82,https://powergridiq.com/rating/spain
-portugal,Portugal,europe,2,Strong,64,Positive,Med,False,68,68,62,50,78,https://powergridiq.com/rating/portugal
-austria,Austria,europe,3,Workable,58,Stable,Med,False,58,58,64,35,88,https://powergridiq.com/rating/austria
-denmark,Denmark,europe,3,Workable,57,Stable,Med,False,55,48,70,45,82,https://powergridiq.com/rating/denmark
-belgium,Belgium,europe,3,Workable,56,Stable,Med,False,55,55,64,40,80,https://powergridiq.com/rating/belgium
-switzerland,Switzerland,europe,3,Workable,54,Stable,Med,False,50,58,56,35,95,https://powergridiq.com/rating/switzerland
-czech-republic,Czech Republic,europe,3,Workable,52,Stable,Med,False,58,58,52,35,44,https://powergridiq.com/rating/czech-republic
-romania,Romania,europe,3,Workable,52,Positive,Med,False,55,58,50,35,66,https://powergridiq.com/rating/romania
-lithuania,Lithuania,europe,3,Workable,52,Stable,Med,False,55,50,58,30,71,https://powergridiq.com/rating/lithuania
-italy,Italy,europe,3,Workable,51,Stable,Med,False,52,55,42,55,60,https://powergridiq.com/rating/italy
-poland,Poland,europe,3,Workable,50,Positive,Med,False,58,58,42,45,11,https://powergridiq.com/rating/poland
-latvia,Latvia,europe,4,Constrained,49,Stable,Med,False,52,48,55,22,84,https://powergridiq.com/rating/latvia
-slovakia,Slovakia,europe,4,Constrained,48,Stable,Med,False,58,50,40,25,84,https://powergridiq.com/rating/slovakia
-greece,Greece,europe,4,Constrained,47,Positive,Med,False,55,55,40,30,53,https://powergridiq.com/rating/greece
-hungary,Hungary,europe,4,Constrained,47,Stable,Med,False,55,50,40,30,71,https://powergridiq.com/rating/hungary
-bulgaria,Bulgaria,europe,4,Constrained,47,Stable,Med,False,55,55,42,25,47,https://powergridiq.com/rating/bulgaria
-estonia,Estonia,europe,4,Constrained,47,Stable,Med,False,55,48,50,28,28,https://powergridiq.com/rating/estonia
-croatia,Croatia,europe,4,Constrained,46,Stable,Med,False,52,48,45,22,71,https://powergridiq.com/rating/croatia
-great-britain,Great Britain,europe,4,Constrained,44,Positive,High,False,38,45,20,82,78,https://powergridiq.com/rating/great-britain
-slovenia,Slovenia,europe,4,Constrained,43,Stable,Med,False,52,45,38,22,67,https://powergridiq.com/rating/slovenia
-netherlands,Netherlands,europe,4,Constrained,41,Negative,High,False,25,40,40,70,52,https://powergridiq.com/rating/netherlands
-saudi-arabia,Saudi Arabia,middle_east,2,Strong,74,Positive,Med,False,78,70,95,58,12,https://powergridiq.com/rating/saudi-arabia
-qatar,Qatar,middle_east,2,Strong,66,Stable,Med,False,68,62,92,38,30,https://powergridiq.com/rating/qatar
-egypt,Egypt,middle_east,3,Workable,61,Positive,Low,False,65,58,78,35,35,https://powergridiq.com/rating/egypt
-kuwait,Kuwait,middle_east,3,Workable,60,Stable,Low,False,60,58,95,22,2,https://powergridiq.com/rating/kuwait
-turkey,Turkey,middle_east,3,Workable,54,Stable,Med,False,62,55,58,35,39,https://powergridiq.com/rating/turkey
-israel,Israel,middle_east,3,Workable,50,Stable,Low,False,55,50,55,35,35,https://powergridiq.com/rating/israel
-iraq,Iraq,middle_east,4,Constrained,46,Stable,Low,False,45,30,88,18,11,https://powergridiq.com/rating/iraq
-chile,Chile,latam,3,Workable,57,Positive,Med,False,60,60,58,45,56,https://powergridiq.com/rating/chile
-uruguay,Uruguay,latam,3,Workable,56,Stable,Med,False,62,55,58,30,97,https://powergridiq.com/rating/uruguay
-colombia,Colombia,latam,3,Workable,55,Stable,Med,False,58,55,60,35,77,https://powergridiq.com/rating/colombia
-argentina,Argentina,latam,3,Workable,54,Positive,Low,False,58,55,58,35,53,https://powergridiq.com/rating/argentina
-costa-rica,Costa Rica,latam,3,Workable,51,Stable,Med,False,58,45,55,25,100,https://powergridiq.com/rating/costa-rica
-japan,Japan,asia,3,Workable,50,Positive,Med,False,55,58,25,70,36,https://powergridiq.com/rating/japan
-south-africa,South Africa,africa,3,Workable,56,Positive,Med,False,58,50,70,50,16,https://powergridiq.com/rating/south-africa
-new-zealand,New Zealand,oceania,3,Workable,55,Stable,Med,False,60,55,58,30,91,https://powergridiq.com/rating/new-zealand
-australia,Australia (NEM),oceania,3,Workable,54,Positive,Med-High,False,58,58,45,62,34,https://powergridiq.com/rating/australia
-taiwan,Taiwan,asia,4,Constrained,39,Stable,Med,False,45,40,25,45,43,https://powergridiq.com/rating/taiwan
-singapore,Singapore,asia,4,Constrained,38,Stable,High,False,35,40,25,60,42,https://powergridiq.com/rating/singapore
+id,name,group,parent,tier,tier_name,pgiq_rating,fundamentals,reliability_dock,reliability_assessed,reliability_confidence,delivery_transmission,delivery_distribution,forward_capacity,outlook,under_review,access,availability,cost,momentum,carbon,report_url,as_of
+ercot,ERCOT (Texas),us,,2,Strong,70,78,8,True,High,watch,none,elevated,Positive,False,88,62,85,80,55,https://powergridiq.com/rating/ercot,2026-07-03
+uae,United Arab Emirates,middle_east,,1,Prime,76,79,3,True,Med,none,none,watch,Positive,False,82,70,90,80,42,https://powergridiq.com/rating/uae,2026-07-03
+quebec,Quebec,canada,,2,Strong,67,74,7,True,Med-High,watch,elevated,none,Positive,False,55,90,100,30,100,https://powergridiq.com/rating/quebec,2026-07-03
+northern-virginia,Northern Virginia (PJM),us,,2,Strong,51,58,7,True,High,watch,none,elevated,Negative,True,42,45,70,92,58,https://powergridiq.com/rating/northern-virginia,2026-07-03
+us-southeast,US Southeast (Atlanta),us,,2,Strong,65,69,4,True,Med-High,watch,none,watch,Positive,False,65,60,72,88,60,https://powergridiq.com/rating/us-southeast,2026-07-03
+norway,Norway,europe,,1,Prime,75,75,0,True,High,none,none,none,Stable,False,58,85,90,60,99,https://powergridiq.com/rating/norway,2026-07-03
+ontario,Ontario,canada,,2,Strong,64,69,5,True,High,none,watch,elevated,Negative,False,60,58,92,58,88,https://powergridiq.com/rating/ontario,2026-07-03
+pacific-northwest,Pacific Northwest,us,,2,Strong,69,75,6,True,Med-High,watch,none,elevated,Negative,False,55,83,90,70,88,https://powergridiq.com/rating/pacific-northwest,2026-07-03
+brazil,Brazil (Sao Paulo),latam,,2,Strong,67,72,5,True,Low,watch,none,watch,Positive,False,58,70,88,70,86,https://powergridiq.com/rating/brazil,2026-07-03
+india,India,asia,,3,Workable,57,61,4,True,Low,watch,none,none,Positive,False,55,55,72,82,0,https://powergridiq.com/rating/india,2026-07-03
+germany-north,Germany North (Hamburg),europe,germany,3,Workable,57,57,0,True,High,none,none,none,Positive,False,58,72,45,50,55,https://powergridiq.com/rating/germany-north,2026-07-03
+germany-south,Germany South (Frankfurt/Munich),europe,germany,4,Constrained,43,50,7,True,High,none,none,elevated,Stable,False,40,46,45,85,42,https://powergridiq.com/rating/germany-south,2026-07-03
+ireland,Ireland (Dublin),europe,,5,Largely closed,32,37,5,True,High,none,none,elevated,Positive,True,22,38,39,55,54,https://powergridiq.com/rating/ireland,2026-07-03
+desert-southwest,Desert Southwest (Phoenix),us,,2,Strong,69,72,3,True,Med,none,none,watch,Positive,False,68,62,80,85,70,https://powergridiq.com/rating/desert-southwest,2026-07-03
+spp,SPP (Southwest Power Pool),us,,2,Strong,63,69,6,True,Med-High,elevated,none,watch,Positive,False,65,65,90,50,58,https://powergridiq.com/rating/spp,2026-07-03
+miso,MISO (Midwest),us,,2,Strong,57,64,7,True,High,watch,none,elevated,Positive,False,50,55,88,70,52,https://powergridiq.com/rating/miso,2026-07-03
+caiso,CAISO (California),us,,3,Workable,49,56,7,True,High,elevated,elevated,watch,Negative,False,45,48,68,70,68,https://powergridiq.com/rating/caiso,2026-07-03
+nyiso,NYISO (New York),us,,3,Workable,51,55,4,True,Low,none,none,watch,Negative,True,42,50,71,55,73,https://powergridiq.com/rating/nyiso,2026-07-03
+isone,ISO New England,us,,3,Workable,48,53,5,True,Med-High,none,none,elevated,Stable,False,52,50,60,45,63,https://powergridiq.com/rating/isone,2026-07-03
+british-columbia,British Columbia,canada,,2,Strong,70,75,5,True,Med-High,none,none,watch,Positive,False,68,80,95,42,99,https://powergridiq.com/rating/british-columbia,2026-07-03
+manitoba,Manitoba,canada,,2,Strong,70,73,3,True,Med,none,none,watch,Stable,False,68,70,98,35,99,https://powergridiq.com/rating/manitoba,2026-07-03
+alberta,Alberta,canada,,2,Strong,59,66,7,True,High,elevated,none,watch,Positive,False,75,62,65,60,62,https://powergridiq.com/rating/alberta,2026-07-03
+newfoundland,Newfoundland & Labrador,canada,,3,Workable,58,61,3,True,Low,none,none,watch,Stable,False,52,55,93,22,99,https://powergridiq.com/rating/newfoundland,2026-07-03
+saskatchewan,Saskatchewan,canada,,4,Constrained,45,48,3,True,Low,none,none,watch,Stable,False,62,52,50,25,11,https://powergridiq.com/rating/saskatchewan,2026-07-03
+new-brunswick,New Brunswick,canada,,3,Workable,53,53,0,True,Low,none,none,none,Stable,False,62,52,58,25,57,https://powergridiq.com/rating/new-brunswick,2026-07-03
+nova-scotia,Nova Scotia,canada,,4,Constrained,40,43,3,True,Low,none,none,watch,Stable,False,58,48,30,22,16,https://powergridiq.com/rating/nova-scotia,2026-07-03
+sweden-north,"Sweden North (Lulea, SE1/SE2)",europe,sweden,1,Prime,78,78,0,True,High,none,none,none,Positive,False,70,80,94,60,99,https://powergridiq.com/rating/sweden-north,2026-07-03
+sweden-south,"Sweden South (Malmo, SE4)",europe,sweden,3,Workable,55,59,4,True,Med-High,watch,none,watch,Stable,False,55,52,72,45,90,https://powergridiq.com/rating/sweden-south,2026-07-03
+france,France,europe,,2,Strong,66,69,3,True,High,none,none,watch,Positive,False,68,78,56,72,95,https://powergridiq.com/rating/france,2026-07-03
+finland,Finland,europe,,2,Strong,69,69,0,True,Med-High,none,none,none,Positive,False,72,70,68,55,90,https://powergridiq.com/rating/finland,2026-07-03
+spain,Spain,europe,,2,Strong,59,66,7,True,High,elevated,none,watch,Positive,False,65,72,62,58,82,https://powergridiq.com/rating/spain,2026-07-03
+portugal,Portugal,europe,,2,Strong,57,64,7,True,High,elevated,none,watch,Positive,False,68,68,62,50,78,https://powergridiq.com/rating/portugal,2026-07-03
+austria,Austria,europe,,3,Workable,58,58,0,True,Low,none,none,none,Stable,False,58,58,64,35,88,https://powergridiq.com/rating/austria,2026-07-03
+denmark,Denmark,europe,,3,Workable,57,57,0,True,Low,none,none,none,Stable,False,55,48,70,45,82,https://powergridiq.com/rating/denmark,2026-07-03
+belgium,Belgium,europe,,3,Workable,53,56,3,True,Low,none,none,watch,Stable,False,55,55,64,40,80,https://powergridiq.com/rating/belgium,2026-07-03
+switzerland,Switzerland,europe,,3,Workable,54,54,0,True,Low,none,none,none,Stable,False,50,58,56,35,95,https://powergridiq.com/rating/switzerland,2026-07-03
+czech-republic,Czech Republic,europe,,3,Workable,49,52,3,True,Low,none,none,watch,Stable,False,58,58,52,35,44,https://powergridiq.com/rating/czech-republic,2026-07-03
+romania,Romania,europe,,3,Workable,49,52,3,True,Low,none,none,watch,Positive,False,55,58,50,35,66,https://powergridiq.com/rating/romania,2026-07-03
+lithuania,Lithuania,europe,,3,Workable,49,52,3,True,Low,none,none,watch,Stable,False,55,50,58,30,71,https://powergridiq.com/rating/lithuania,2026-07-03
+italy,"Italy (Milan, North)",europe,,3,Workable,48,51,3,True,Low,none,none,watch,Stable,False,52,55,42,55,60,https://powergridiq.com/rating/italy,2026-07-03
+poland,Poland,europe,,3,Workable,47,50,3,True,Low,none,none,watch,Positive,False,58,58,42,45,11,https://powergridiq.com/rating/poland,2026-07-03
+latvia,Latvia,europe,,4,Constrained,46,49,3,True,Low,none,none,watch,Stable,False,52,48,55,22,84,https://powergridiq.com/rating/latvia,2026-07-03
+slovakia,Slovakia,europe,,4,Constrained,48,48,0,True,Low,none,none,none,Stable,False,58,50,40,25,84,https://powergridiq.com/rating/slovakia,2026-07-03
+greece,Greece,europe,,4,Constrained,44,47,3,True,Low,none,none,watch,Positive,False,55,55,40,30,53,https://powergridiq.com/rating/greece,2026-07-03
+hungary,Hungary,europe,,4,Constrained,47,47,0,True,Low,none,none,none,Stable,False,55,50,40,30,71,https://powergridiq.com/rating/hungary,2026-07-03
+bulgaria,Bulgaria,europe,,4,Constrained,47,47,0,True,Low,none,none,none,Stable,False,55,55,42,25,47,https://powergridiq.com/rating/bulgaria,2026-07-03
+estonia,Estonia,europe,,4,Constrained,44,47,3,True,Low,none,none,watch,Stable,False,55,48,50,28,28,https://powergridiq.com/rating/estonia,2026-07-03
+croatia,Croatia,europe,,4,Constrained,43,46,3,True,Low,none,none,watch,Stable,False,52,48,45,22,71,https://powergridiq.com/rating/croatia,2026-07-03
+great-britain,Great Britain,europe,,4,Constrained,41,44,3,True,Med-High,none,none,watch,Positive,False,38,45,20,82,78,https://powergridiq.com/rating/great-britain,2026-07-03
+slovenia,Slovenia,europe,,4,Constrained,43,43,0,True,Low,none,none,none,Stable,False,52,45,38,22,67,https://powergridiq.com/rating/slovenia,2026-07-03
+netherlands,Netherlands,europe,,4,Constrained,38,41,3,True,High,none,none,watch,Negative,False,25,40,40,70,52,https://powergridiq.com/rating/netherlands,2026-07-03
+saudi-arabia,Saudi Arabia,middle_east,,2,Strong,69,74,5,True,Med,watch,watch,watch,Positive,False,78,70,95,58,12,https://powergridiq.com/rating/saudi-arabia,2026-07-03
+qatar,Qatar,middle_east,,2,Strong,63,66,3,True,Low,none,none,watch,Stable,False,68,62,92,38,30,https://powergridiq.com/rating/qatar,2026-07-03
+egypt,Egypt,middle_east,,3,Workable,57,61,4,True,Low,watch,none,none,Positive,False,65,58,78,35,35,https://powergridiq.com/rating/egypt,2026-07-03
+kuwait,Kuwait,middle_east,,3,Workable,57,60,3,True,Low,none,none,watch,Stable,False,60,58,95,22,2,https://powergridiq.com/rating/kuwait,2026-07-03
+turkey,Turkey,middle_east,,3,Workable,51,54,3,True,Low,none,none,watch,Stable,False,62,55,58,35,39,https://powergridiq.com/rating/turkey,2026-07-03
+israel,Israel,middle_east,,3,Workable,46,50,4,True,Low,none,none,watch,Stable,False,55,50,55,35,35,https://powergridiq.com/rating/israel,2026-07-03
+iraq,Iraq,middle_east,,4,Constrained,42,46,4,True,Low,watch,none,none,Stable,False,45,30,88,18,11,https://powergridiq.com/rating/iraq,2026-07-03
+chile,Chile,latam,,3,Workable,54,57,3,True,Low,none,none,watch,Positive,False,60,60,58,45,56,https://powergridiq.com/rating/chile,2026-07-03
+uruguay,Uruguay,latam,,3,Workable,56,56,0,True,Low,none,none,none,Stable,False,62,55,58,30,97,https://powergridiq.com/rating/uruguay,2026-07-03
+colombia,Colombia,latam,,3,Workable,51,55,4,True,Low,none,none,watch,Stable,False,58,55,60,35,77,https://powergridiq.com/rating/colombia,2026-07-03
+argentina,Argentina,latam,,3,Workable,50,54,4,True,Low,watch,none,none,Positive,False,58,55,58,35,53,https://powergridiq.com/rating/argentina,2026-07-03
+costa-rica,Costa Rica,latam,,3,Workable,48,51,3,True,Low,none,none,watch,Stable,False,58,45,55,25,100,https://powergridiq.com/rating/costa-rica,2026-07-03
+japan-east,"Japan East (Tokyo, 50Hz)",asia,japan,4,Constrained,40,47,7,True,Med-High,none,none,elevated,Stable,False,55,48,22,78,30,https://powergridiq.com/rating/japan-east,2026-07-03
+japan-west,"Japan West (Osaka, 60Hz)",asia,japan,3,Workable,51,51,0,True,Med-High,none,none,none,Positive,False,58,62,28,60,45,https://powergridiq.com/rating/japan-west,2026-07-03
+south-africa,South Africa,africa,,3,Workable,52,56,4,True,Low,watch,none,none,Positive,False,58,50,70,50,16,https://powergridiq.com/rating/south-africa,2026-07-03
+new-zealand,New Zealand,oceania,,3,Workable,52,55,3,True,Low,none,none,watch,Stable,False,60,55,58,30,91,https://powergridiq.com/rating/new-zealand,2026-07-03
+australia-nsw,Australia NSW (Sydney),oceania,australia,3,Workable,51,55,4,True,Med-High,none,none,watch,Positive,False,58,52,45,78,38,https://powergridiq.com/rating/australia-nsw,2026-07-03
+australia-vic,Australia Victoria (Melbourne),oceania,australia,4,Constrained,46,52,6,True,Med-High,none,none,elevated,Stable,False,58,50,48,58,20,https://powergridiq.com/rating/australia-vic,2026-07-03
+australia-qld,Australia Queensland (Brisbane),oceania,australia,3,Workable,51,54,3,True,Med,none,none,watch,Positive,False,60,58,48,55,30,https://powergridiq.com/rating/australia-qld,2026-07-03
+taiwan,Taiwan,asia,,4,Constrained,35,39,4,True,Low,watch,none,none,Stable,False,45,40,25,45,43,https://powergridiq.com/rating/taiwan,2026-07-03
+singapore,Singapore,asia,,4,Constrained,35,38,3,True,Low,none,none,watch,Stable,False,35,40,25,60,42,https://powergridiq.com/rating/singapore,2026-07-03
