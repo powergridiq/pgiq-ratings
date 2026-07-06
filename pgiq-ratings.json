@@ -1,10 +1,11 @@
 {
-  "name": "PowerGridIQ Rating dataset",
-  "version": "2.0",
-  "description": "Tiered ratings for siting or scheduling a large electricity load across global power markets. v2 adds a reliability overlay: 'fundamentals' is the five-pillar score, 'pgiq_rating' is the reliability-adjusted rating (fundamentals minus the reliability dock). Country overviews are excluded; sub-regions are the rated entities.",
+  "name": "PowerGridIQ Rating dataset (headline)",
+  "version": "2.1",
+  "description": "Free, redistributable HEADLINE ratings for siting or scheduling a large electricity load across global power markets: per market, the tier, the reliability-adjusted PGIQ Rating, the five-pillar Fundamentals score, outlook, confidence and overall reliability level. The five pillar sub-scores, the detailed reliability reads, the point-in-time history and the interconnection-queue detail are proprietary and available via the API under a separate commercial license, not in this file. Country overviews are excluded; sub-regions are the rated entities.",
   "as_of": "June 2026",
-  "updated": "2026-07-03",
-  "license": "Free to use with attribution to 'PowerGridIQ Rating' (https://powergridiq.com).",
+  "updated": "2026-07-05",
+  "license": "Headline ratings (tier, PGIQ Rating, Fundamentals score, outlook, confidence, overall reliability level) are free to use, share and adapt with attribution to 'PowerGridIQ Rating' (https://powergridiq.com) under CC BY 4.0. The five pillar sub-scores, the detailed reliability reads, the point-in-time history and the interconnection-queue detail are proprietary and are NOT included in this file; they are available via the API under a separate commercial license (evaluation use only, not for redistribution). Contact hello@powergridiq.com for production or commercial use.",
+  "license_short": "CC BY 4.0 (headline fields only)",
   "source": "https://powergridiq.com",
   "count": 72,
   "markets": [
@@ -17,49 +18,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 70,
       "fundamentals": 78,
+      "reliability_level": "elevated",
       "reliability_dock": 8,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 8,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "Extreme-cold fragility was demonstrated in Winter Storm Uri (Feb 2021), when ERCOT ordered about 20,000 MW of rolling blackouts, the largest manual load shed in US history, with outages lasting days; freezing and fuel issues drove roughly 76% of unit failures. Post-Uri winterization rules have improved subsequent winter performance but the tail risk remains.",
-          "sources": [
-            {
-              "label": "FERC/NERC Feb 2021 cold weather final report",
-              "url": "https://www.ferc.gov/news-events/news/final-report-february-2021-freeze-underscores-winterization-recommendations"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "NERC's 2024 Long-Term Reliability Assessment rates ERCOT elevated-risk: about 20 GW of new large loads plus a more variable, less dispatchable resource mix raise the risk of long-term shortfalls.",
-          "sources": [
-            {
-              "label": "NERC 2024 Long-Term Reliability Assessment",
-              "url": "https://www.nerc.com/globalassets/our-work/assessments/2024-ltra_corrected_july_2025.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 88,
-        "availability": 62,
-        "cost": 85,
-        "momentum": 80,
-        "carbon": 55
-      },
       "report_url": "https://powergridiq.com/rating/ercot"
     },
     {
@@ -71,49 +36,13 @@
       "tier_name": "Prime",
       "pgiq_rating": 76,
       "fundamentals": 79,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Med",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none",
-          "measure": "measured",
-          "note": "World-leading delivery reliability in the main load centre: DEWA (Dubai) reported customer minutes lost of 0.82 minutes per year in 2025, a global record, versus roughly 15 minutes at leading EU utilities.",
-          "sources": [
-            {
-              "label": "DEWA world-record CML (Arabian Business)",
-              "url": "https://www.arabianbusiness.com/business/energy/dewa-sets-world-record-with-0-82-minutes-lowest-annual-power-outage-in-dubai"
-            }
-          ]
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Firm baseload is strong (Barakah nuclear supplies about 25% of national electricity, roughly 5.6 GW), but extreme-heat cooling demand drives high summer peaks; capacity is expanding to match.",
-          "sources": [
-            {
-              "label": "Barakah at ~25% of UAE electricity (World Nuclear Assoc.)",
-              "url": "https://world-nuclear.org/information-library/country-profiles/countries-t-z/united-arab-emirates"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 82,
-        "availability": 70,
-        "cost": 90,
-        "momentum": 80,
-        "carbon": 42
-      },
       "report_url": "https://powergridiq.com/rating/uae"
     },
     {
@@ -125,49 +54,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 67,
       "fundamentals": 74,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "Major-event damage is largely distribution and sub-transmission; a transmission-connected firm-service load faces materially less exposure, though restoration during large storms is slow.",
-          "sources": [
-            {
-              "label": "Hydro-Quebec 2023 distribution activities",
-              "url": "https://www.hydroquebec.com/documents-data/official-publications/distribution-activities-2023.html"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "Storm-fragile delivery: the Apr 5, 2023 ice storm alone was about 59% of that year's unadjusted SAIDI, and 2024 unadjusted SAIDI was 436 minutes per customer (roughly half of 2023). Major-event-adjusted reliability is stable, so the risk is major-event frequency and slow restoration, not blue-sky performance.",
-          "sources": [
-            {
-              "label": "Hydro-Quebec 2024 accountability report",
-              "url": "https://news.hydroquebec.com/news/press-releases/all-quebec/hydro-quebec-positive-assessment-2024-distribution-activities-published-annual-accountability-report.html"
-            }
-          ]
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 90,
-        "cost": 100,
-        "momentum": 30,
-        "carbon": 100
-      },
       "report_url": "https://powergridiq.com/rating/quebec"
     },
     {
@@ -179,53 +72,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 51,
       "fundamentals": 58,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "Winter Storm Elliott (Dec 2022) drove nearly 46,000 MW of forced outages in PJM, about 25% of installed capacity, prompting PJM's first conservation call since 2014 and a warning that rotating outages were a real risk.",
-          "sources": [
-            {
-              "label": "PJM Winter Storm Elliott report",
-              "url": "https://insidelines.pjm.com/pjm-releases-winter-storm-elliott-report/"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "Reserve margins are tightening as data-center demand surges: the 2025 capacity auction cleared at the $333/MW-day cap with an installed reserve margin near 14.8%, below the 20% target, and FERC members flagged reliability concerns. Mitigants include possible retirement deferrals and a lower forecast peak.",
-          "sources": [
-            {
-              "label": "PJM capacity prices hit record (Utility Dive)",
-              "url": "https://www.utilitydive.com/news/pjm-interconnection-capacity-auction-data-center/808264/"
-            },
-            {
-              "label": "NERC 2024 LTRA (PJM elevated-risk)",
-              "url": "https://www.nerc.com/globalassets/our-work/assessments/2024-ltra_corrected_july_2025.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Negative",
       "confidence": "High",
       "under_review": true,
-      "pillars": {
-        "access": 42,
-        "availability": 45,
-        "cost": 70,
-        "momentum": 92,
-        "carbon": 58
-      },
       "report_url": "https://powergridiq.com/rating/northern-virginia"
     },
     {
@@ -237,43 +90,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 65,
       "fundamentals": 69,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "Winter Storm Elliott (Dec 2022) forced rolling blackouts at TVA (its first ever) and Duke Energy in the Carolinas when cold knocked out coal and gas generation; imports prevented wider outages.",
-          "sources": [
-            {
-              "label": "FERC Dec 2022 Winter Storm Elliott review",
-              "url": "https://ferc.gov/sites/default/files/2023-09/Presentation%20-%20Elliott_F-R_Open_Mtg_(9-21-23).pdf"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Winter generation adequacy under extreme cold is the main forward risk; largely vertically integrated utilities are adding capacity."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 65,
-        "availability": 60,
-        "cost": 72,
-        "momentum": 88,
-        "carbon": 60
-      },
       "report_url": "https://powergridiq.com/rating/us-southeast"
     },
     {
@@ -285,41 +108,13 @@
       "tier_name": "Prime",
       "pgiq_rating": 75,
       "fundamentals": 75,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "measured",
-          "note": "Physically the strongest grid in the set: about 94.8% renewable and a large net exporter (roughly 18.4 TWh net export in 2024) with firm hydro headroom. The binding constraint is southern-zone access and price, captured in the Access pillar rather than delivery reliability.",
-          "sources": [
-            {
-              "label": "IEA Norway electricity security",
-              "url": "https://www.iea.org/articles/norway-electricity-security-policy"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Stable",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 85,
-        "cost": 90,
-        "momentum": 60,
-        "carbon": 99
-      },
       "report_url": "https://powergridiq.com/rating/norway"
     },
     {
@@ -331,47 +126,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 64,
       "fundamentals": 69,
+      "reliability_level": "elevated",
       "reliability_dock": 5,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 5,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Distribution reliability (rural feeders, storm exposure) is moderate and not the binding concern here."
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "Large firm baseload leaving as demand climbs: Pickering Units 5-8 (about 2,000 MW) go offline in September 2026 for refurbishment into the mid-2030s, and Unit 4 was permanently retired in 2025. IESO planning shows needs emerging as data-center demand rises. Steps down if replacement firm capacity clears procurement.",
-          "sources": [
-            {
-              "label": "CNSC approves Pickering to end-2026 (NucNet)",
-              "url": "https://www.nucnet.org/news/regulator-approves-pickering-operation-to-end-of-2026-as-refurbishment-plans-advance-10-2-2024"
-            },
-            {
-              "label": "Pickering-4 permanently shut (NucNet)",
-              "url": "https://www.nucnet.org/news/pickering-4-nuclear-plant-in-ontario-permanently-shut-down-1-5-2025"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Negative",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 60,
-        "availability": 58,
-        "cost": 92,
-        "momentum": 58,
-        "carbon": 88
-      },
       "report_url": "https://powergridiq.com/rating/ontario"
     },
     {
@@ -383,47 +144,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 69,
       "fundamentals": 75,
+      "reliability_level": "elevated",
       "reliability_dock": 6,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 6,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "A dayslong cold snap over Martin Luther King weekend in January 2024 brought the region dangerously close to rolling outages."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "The Northwest holds most US hydro capacity, so a dry hydro year combined with an extended cold snap is the region's rolling-blackout risk; BPA has warned of a widening resource gap and took large drought-driven revenue losses.",
-          "sources": [
-            {
-              "label": "PNW energy-shortage risk in extreme conditions (Spokesman)",
-              "url": "https://www.spokesman.com/stories/2025/oct/22/pacific-northwest-could-face-energy-shortage-durin/"
-            },
-            {
-              "label": "Drought cuts PNW hydropower (EIA)",
-              "url": "https://www.eia.gov/todayinenergy/detail.php?id=63664"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Negative",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 83,
-        "cost": 90,
-        "momentum": 70,
-        "carbon": 88
-      },
       "report_url": "https://powergridiq.com/rating/pacific-northwest"
     },
     {
@@ -435,43 +162,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 67,
       "fundamentals": 72,
+      "reliability_level": "watch",
       "reliability_dock": 5,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 5,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "A nationwide blackout on Aug 15, 2023 interrupted about 19 GW (roughly 27% of load) when the north-to-southeast grid split and voltage-control failures cascaded; heavy hydro dependence also adds drought exposure. Confidence is low and much of the underlying data is modelled.",
-          "sources": [
-            {
-              "label": "2023 Brazil blackout (Wikipedia)",
-              "url": "https://en.wikipedia.org/wiki/2023_Brazil_blackout"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Hydro-dominant supply is exposed to recurring drought across South America."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Low",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 70,
-        "cost": 88,
-        "momentum": 70,
-        "carbon": 86
-      },
       "report_url": "https://powergridiq.com/rating/brazil"
     },
     {
@@ -483,35 +180,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 57,
       "fundamentals": 61,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: reliability varies widely by state and is historically shortfall-prone, improving with capacity build."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 55,
-        "cost": 72,
-        "momentum": 82,
-        "carbon": 0
-      },
       "report_url": "https://powergridiq.com/rating/india"
     },
     {
@@ -523,41 +198,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 57,
       "fundamentals": 57,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "measured",
-          "note": "Germany's delivery reliability is world-class (about 12.8 minutes average interruption in 2023), and the north runs a generation surplus.",
-          "sources": [
-            {
-              "label": "German supply reliability (Clean Energy Wire)",
-              "url": "https://www.cleanenergywire.org/news/german-electricity-supply-continued-be-highly-reliable-during-energy-crisis-nuclear-phase-out"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 72,
-        "cost": 45,
-        "momentum": 50,
-        "carbon": 55
-      },
       "report_url": "https://powergridiq.com/rating/germany-north"
     },
     {
@@ -569,43 +216,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 43,
       "fundamentals": 50,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "measured",
-          "note": "Delivery reliability is high nationwide (about 12.8 minutes average interruption in 2023); the concern here is forward firm capacity, not outages."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "The south lost most of its nuclear baseload in 2023 and depends on northern and imported power over a bottlenecked grid; the SuedLink HVDC fix is delayed to about 2028, leaving heavy redispatch. Firm-capacity risk for a new large load is concentrated here.",
-          "sources": [
-            {
-              "label": "Germany SuedLink north-south line (Clean Energy Wire)",
-              "url": "https://www.cleanenergywire.org/news/germany-starts-construction-north-south-power-line-pivotal-energy-transition"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Stable",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 40,
-        "availability": 46,
-        "cost": 45,
-        "momentum": 85,
-        "carbon": 42
-      },
       "report_url": "https://powergridiq.com/rating/germany-south"
     },
     {
@@ -617,41 +234,13 @@
       "tier_name": "Largely closed",
       "pgiq_rating": 32,
       "fundamentals": 37,
+      "reliability_level": "elevated",
       "reliability_dock": 5,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 5,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "Tight adequacy: EirGrid warns of possible Amber system alerts at low-wind, low-import evening peaks, and the system leans on temporary emergency generation plus protocols under which large users (mostly data centres) cut demand by up to 75% in an emergency. Data-center demand is the core driver, which is why grid-only connection around Dublin is gated.",
-          "sources": [
-            {
-              "label": "EirGrid winter adequacy outlook",
-              "url": "https://www.eirgrid.ie/news/new-eirgrid-forecast-shows-low-potential-system-alerts-winter-due-insufficient-generation"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "High",
       "under_review": true,
-      "pillars": {
-        "access": 22,
-        "availability": 38,
-        "cost": 39,
-        "momentum": 55,
-        "carbon": 54
-      },
       "report_url": "https://powergridiq.com/rating/ireland"
     },
     {
@@ -663,35 +252,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 69,
       "fundamentals": 72,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Med",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Phoenix and the desert Southwest face extreme summer cooling peaks that strain supply; utilities have managed them so far, but heat-driven peak stress is the standing forward risk."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med",
       "outlook": "Positive",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 68,
-        "availability": 62,
-        "cost": 80,
-        "momentum": 85,
-        "carbon": 70
-      },
       "report_url": "https://powergridiq.com/rating/desert-southwest"
     },
     {
@@ -703,49 +270,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 63,
       "fundamentals": 69,
+      "reliability_level": "elevated",
       "reliability_dock": 6,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 6,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "Ordered rolling blackouts during Winter Storm Uri (Feb 2021), its first-ever region-wide firm load shed, when extreme cold knocked out generation.",
-          "sources": [
-            {
-              "label": "FERC/NERC Feb 2021 cold weather final report",
-              "url": "https://www.ferc.gov/news-events/news/final-report-february-2021-freeze-underscores-winterization-recommendations"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "NERC's 2024 assessment rates SPP elevated-risk as demand grows against a changing resource mix.",
-          "sources": [
-            {
-              "label": "NERC 2024 Long-Term Reliability Assessment",
-              "url": "https://www.nerc.com/globalassets/our-work/assessments/2024-ltra_corrected_july_2025.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 65,
-        "availability": 65,
-        "cost": 90,
-        "momentum": 50,
-        "carbon": 58
-      },
       "report_url": "https://powergridiq.com/rating/spp"
     },
     {
@@ -757,49 +288,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 57,
       "fundamentals": 64,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "Exposed in Winter Storm Uri (Feb 2021), with rolling blackouts in the MISO South region during the extreme cold.",
-          "sources": [
-            {
-              "label": "FERC/NERC Feb 2021 cold weather final report",
-              "url": "https://www.ferc.gov/news-events/news/final-report-february-2021-freeze-underscores-winterization-recommendations"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "The only region NERC's 2024 assessment rates high-risk: coal retirements and delayed additions push reserve margins below reference levels from 2025, with a projected shortfall of about 2.7 GW by 2029.",
-          "sources": [
-            {
-              "label": "NERC 2024 Long-Term Reliability Assessment",
-              "url": "https://www.nerc.com/globalassets/our-work/assessments/2024-ltra_corrected_july_2025.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 50,
-        "availability": 55,
-        "cost": 88,
-        "momentum": 70,
-        "carbon": 52
-      },
       "report_url": "https://powergridiq.com/rating/miso"
     },
     {
@@ -811,57 +306,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 49,
       "fundamentals": 56,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "ISO-ordered rotating outages during the August 2020 heat wave (about 492,000 customers cut on Aug 14) show supply-shortfall load-shedding risk at peak.",
-          "sources": [
-            {
-              "label": "CAISO rotating outages fact sheet",
-              "url": "https://www.caiso.com/Documents/Rotating-Power-Outages-Fact-Sheet.pdf"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "Public Safety Power Shutoffs: utilities proactively de-energize lines during wildfire-risk weather, so a load can lose grid power for reasons unrelated to its own site.",
-          "sources": [
-            {
-              "label": "CPUC Public Safety Power Shutoffs",
-              "url": "https://www.cpuc.ca.gov/psps/"
-            }
-          ]
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "NERC's 2024 assessment rates California elevated-risk, with extreme heat likely to cause reserve shortfalls.",
-          "sources": [
-            {
-              "label": "NERC 2024 Long-Term Reliability Assessment",
-              "url": "https://www.nerc.com/globalassets/our-work/assessments/2024-ltra_corrected_july_2025.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Negative",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 45,
-        "availability": 48,
-        "cost": 68,
-        "momentum": 70,
-        "carbon": 68
-      },
       "report_url": "https://powergridiq.com/rating/caiso"
     },
     {
@@ -871,37 +322,15 @@
       "parent": null,
       "tier": 3,
       "tier_name": "Workable",
-      "pgiq_rating": 51,
+      "pgiq_rating": 48,
       "fundamentals": 55,
-      "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: downstate (NYC) reliability margins tightening as peaker retirements and demand growth converge; NYISO has flagged reliability needs."
-        }
-      },
+      "reliability_level": "elevated",
+      "reliability_dock": 7,
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Negative",
       "confidence": "High",
       "under_review": true,
-      "pillars": {
-        "access": 42,
-        "availability": 50,
-        "cost": 71,
-        "momentum": 55,
-        "carbon": 73
-      },
       "report_url": "https://powergridiq.com/rating/nyiso"
     },
     {
@@ -913,41 +342,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 48,
       "fundamentals": 53,
+      "reliability_level": "elevated",
       "reliability_dock": 5,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 5,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "NERC's 2024 assessment rates New England elevated-risk: persistent winter natural-gas constraints plus electrification-driven demand growth could raise shortfall risk by 2026, and extreme cold could challenge reliability further.",
-          "sources": [
-            {
-              "label": "NERC 2024 Long-Term Reliability Assessment",
-              "url": "https://www.nerc.com/globalassets/our-work/assessments/2024-ltra_corrected_july_2025.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Stable",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 52,
-        "availability": 50,
-        "cost": 60,
-        "momentum": 45,
-        "carbon": 63
-      },
       "report_url": "https://powergridiq.com/rating/isone"
     },
     {
@@ -959,41 +360,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 70,
       "fundamentals": 75,
+      "reliability_level": "watch",
       "reliability_dock": 5,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 5,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "Multi-year drought made BC Hydro a net electricity importer for the first time in years: about 13,600 GWh (roughly 25% of supply) imported in fiscal 2024 at nearly C$1.4 billion, as demand rises. Deep hydro dependence adds a hydrology-driven adequacy risk.",
-          "sources": [
-            {
-              "label": "BC Hydro drought imports (BIV)",
-              "url": "https://www.biv.com/news/bc-turns-to-electricity-imports-amid-prolonged-drought-11913589"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 68,
-        "availability": 80,
-        "cost": 95,
-        "momentum": 42,
-        "carbon": 99
-      },
       "report_url": "https://powergridiq.com/rating/british-columbia"
     },
     {
@@ -1005,35 +378,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 70,
       "fundamentals": 73,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Med",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Manitoba Hydro is about 97% hydro, cheap and clean, but that deep hydro dependence carries a drought-year adequacy exposure similar to British Columbia."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med",
       "outlook": "Stable",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 68,
-        "availability": 70,
-        "cost": 98,
-        "momentum": 35,
-        "carbon": 99
-      },
       "report_url": "https://powergridiq.com/rating/manitoba"
     },
     {
@@ -1045,47 +396,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 59,
       "fundamentals": 66,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "Tight supply repeatedly pushed the system to the edge in 2024: AESO declared an EEA3 grid emergency on Jan 13, 2024 with a public alert warning of imminent rotating outages, and issued a second grid alert in April 2024 that led to brief rotating outages in the Edmonton area.",
-          "sources": [
-            {
-              "label": "Alberta Jan/Apr 2024 event report (MSA)",
-              "url": "https://www.albertamsa.ca/assets/Documents/January-and-April-2024-Event-Report.pdf"
-            },
-            {
-              "label": "AESO April 2024 grid alert (Global News)",
-              "url": "https://globalnews.ca/news/10405013/alberta-electric-system-grid-alert-april/"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "Recent grid alerts reflect thin reserve margins during extreme cold and low imports; market and build response is underway."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 75,
-        "availability": 62,
-        "cost": 65,
-        "momentum": 60,
-        "carbon": 62
-      },
       "report_url": "https://powergridiq.com/rating/alberta"
     },
     {
@@ -1097,35 +414,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 58,
       "fundamentals": 61,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: hydro-heavy but small and isolated, with a Muskrat Falls commissioning history."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 52,
-        "availability": 55,
-        "cost": 93,
-        "momentum": 22,
-        "carbon": 99
-      },
       "report_url": "https://powergridiq.com/rating/newfoundland"
     },
     {
@@ -1137,35 +432,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 45,
       "fundamentals": 48,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: coal and gas in transition on a small system."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 62,
-        "availability": 52,
-        "cost": 50,
-        "momentum": 25,
-        "carbon": 11
-      },
       "report_url": "https://powergridiq.com/rating/saskatchewan"
     },
     {
@@ -1175,37 +448,15 @@
       "parent": null,
       "tier": 3,
       "tier_name": "Workable",
-      "pgiq_rating": 53,
+      "pgiq_rating": 50,
       "fundamentals": 53,
-      "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: nuclear and hydro, generally reliable; full assessment pending."
-        }
-      },
+      "reliability_level": "watch",
+      "reliability_dock": 3,
+      "reliability_assessed": true,
+      "reliability_confidence": "Med",
       "outlook": "Stable",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 62,
-        "availability": 52,
-        "cost": 58,
-        "momentum": 25,
-        "carbon": 57
-      },
       "report_url": "https://powergridiq.com/rating/new-brunswick"
     },
     {
@@ -1215,37 +466,15 @@
       "parent": null,
       "tier": 4,
       "tier_name": "Constrained",
-      "pgiq_rating": 40,
+      "pgiq_rating": 37,
       "fundamentals": 43,
-      "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: coal-dependent in transition on a small system."
-        }
-      },
+      "reliability_level": "elevated",
+      "reliability_dock": 6,
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Stable",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 48,
-        "cost": 30,
-        "momentum": 22,
-        "carbon": 16
-      },
       "report_url": "https://powergridiq.com/rating/nova-scotia"
     },
     {
@@ -1257,41 +486,13 @@
       "tier_name": "Prime",
       "pgiq_rating": 78,
       "fundamentals": 78,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "measured",
-          "note": "Northern Sweden runs a large, stable hydro surplus; delivery reliability is strong and there is no local forward adequacy concern.",
-          "sources": [
-            {
-              "label": "Meta chose Lulea for stable renewable power (Seoul Economic)",
-              "url": "https://en.sedaily.com/finance/2026/04/07/swedens-regional-electricity-pricing-draws-big-tech"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 70,
-        "availability": 80,
-        "cost": 94,
-        "momentum": 60,
-        "carbon": 99
-      },
       "report_url": "https://powergridiq.com/rating/sweden-north"
     },
     {
@@ -1303,43 +504,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 55,
       "fundamentals": 59,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "The load-heavy south depends on north-south transfer over a limited trunk grid and on imports from Denmark, Germany and Poland; constrained transfer can leave it exposed when the continent is short.",
-          "sources": [
-            {
-              "label": "Sweden north-south deficit and imports (Seoul Economic)",
-              "url": "https://en.sedaily.com/finance/2026/04/07/swedens-regional-electricity-pricing-draws-big-tech"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "SE4 runs a structural deficit and imports at 2-4x the northern price; adequacy improves only as transmission and planned southern nuclear (2030s) arrive."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Stable",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 52,
-        "cost": 72,
-        "momentum": 45,
-        "carbon": 90
-      },
       "report_url": "https://powergridiq.com/rating/sweden-south"
     },
     {
@@ -1351,41 +522,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 66,
       "fundamentals": 69,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "The nuclear fleet showed a real availability vulnerability in 2022, when stress-corrosion inspections took about a dozen reactors offline and cut output. It has since recovered strongly (nuclear up about 41 TWh in 2024, RTE sees no near-term risk), so this is a monitored tail risk, not a current shortfall.",
-          "sources": [
-            {
-              "label": "France nuclear recovery 2024 (EIA)",
-              "url": "https://www.eia.gov/todayinenergy/detail.php?id=65785"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 68,
-        "availability": 78,
-        "cost": 56,
-        "momentum": 72,
-        "carbon": 95
-      },
       "report_url": "https://powergridiq.com/rating/france"
     },
     {
@@ -1397,41 +540,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 69,
       "fundamentals": 69,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "measured",
-          "note": "Since Olkiluoto 3 (about 1.6 GW) reached regular output in 2023, national resource-adequacy assessments show no concern against the reliability standard (LOLE 2.1 hours/year), and OL3's early-years reliability was high in international comparison.",
-          "sources": [
-            {
-              "label": "Finnish EPR starts supplying electricity (WNN)",
-              "url": "https://world-nuclear-news.org/Articles/Finnish-EPR-starts-supplying-electricity"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 72,
-        "availability": 70,
-        "cost": 68,
-        "momentum": 55,
-        "carbon": 90
-      },
       "report_url": "https://powergridiq.com/rating/finland"
     },
     {
@@ -1443,43 +558,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 59,
       "fundamentals": 66,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "The April 28, 2025 Iberian blackout cut power across peninsular Spain for about ten hours, one of the most significant blackouts in European history, driven by voltage and reactive-power control failures and cascading generator disconnections. Grid-code reform and remediation are underway.",
-          "sources": [
-            {
-              "label": "2025 Iberian blackout, ENTSO-E expert panel",
-              "url": "https://www.entsoe.eu/news/2025/10/03/28-april-blackout-in-spain-and-portugal-expert-panel-releases-comprehensive-factual-report/"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "High renewable share with evolving voltage and inertia management; reforms in progress after the 2025 event."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 65,
-        "availability": 72,
-        "cost": 62,
-        "momentum": 58,
-        "carbon": 82
-      },
       "report_url": "https://powergridiq.com/rating/spain"
     },
     {
@@ -1491,43 +576,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 57,
       "fundamentals": 64,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "Swept up in the April 28, 2025 Iberian blackout, which cut power across mainland Portugal for about ten hours when the Spanish grid collapsed, since Portugal is tightly coupled to the Spanish system.",
-          "sources": [
-            {
-              "label": "2025 Iberian blackout, ENTSO-E expert panel",
-              "url": "https://www.entsoe.eu/news/2025/10/03/28-april-blackout-in-spain-and-portugal-expert-panel-releases-comprehensive-factual-report/"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Reliability is tied to the Spanish system and to the shared reforms following the 2025 event."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 68,
-        "availability": 68,
-        "cost": 62,
-        "momentum": 50,
-        "carbon": 78
-      },
       "report_url": "https://powergridiq.com/rating/portugal"
     },
     {
@@ -1539,35 +594,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 58,
       "fundamentals": 58,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: hydro-rich, well interconnected and reliable."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 58,
-        "cost": 64,
-        "momentum": 35,
-        "carbon": 88
-      },
       "report_url": "https://powergridiq.com/rating/austria"
     },
     {
@@ -1579,35 +612,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 57,
       "fundamentals": 57,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: wind-heavy but deeply interconnected and highly reliable."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 48,
-        "cost": 70,
-        "momentum": 45,
-        "carbon": 82
-      },
       "report_url": "https://powergridiq.com/rating/denmark"
     },
     {
@@ -1619,35 +630,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 53,
       "fundamentals": 56,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: the nuclear phase-out timeline adds a forward adequacy watch."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 55,
-        "cost": 64,
-        "momentum": 40,
-        "carbon": 80
-      },
       "report_url": "https://powergridiq.com/rating/belgium"
     },
     {
@@ -1659,35 +648,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 54,
       "fundamentals": 54,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: hydro and nuclear, very reliable, with some winter import reliance."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 50,
-        "availability": 58,
-        "cost": 56,
-        "momentum": 35,
-        "carbon": 95
-      },
       "report_url": "https://powergridiq.com/rating/switzerland"
     },
     {
@@ -1699,35 +666,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 49,
       "fundamentals": 52,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: coal in transition; reliable delivery."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 58,
-        "cost": 52,
-        "momentum": 35,
-        "carbon": 44
-      },
       "report_url": "https://powergridiq.com/rating/czech-republic"
     },
     {
@@ -1739,35 +684,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 49,
       "fundamentals": 52,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: mixed fleet in transition."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 58,
-        "cost": 50,
-        "momentum": 35,
-        "carbon": 66
-      },
       "report_url": "https://powergridiq.com/rating/romania"
     },
     {
@@ -1779,35 +702,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 49,
       "fundamentals": 52,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: import-dependent Baltic grid, recently desynchronized from the Russian system."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 50,
-        "cost": 58,
-        "momentum": 30,
-        "carbon": 71
-      },
       "report_url": "https://powergridiq.com/rating/lithuania"
     },
     {
@@ -1819,35 +720,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 48,
       "fundamentals": 51,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: gas-dependent and import-reliant northern-zone anchor; full assessment pending."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 52,
-        "availability": 55,
-        "cost": 42,
-        "momentum": 55,
-        "carbon": 60
-      },
       "report_url": "https://powergridiq.com/rating/italy"
     },
     {
@@ -1859,35 +738,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 47,
       "fundamentals": 50,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: coal-heavy in transition; adequacy watch."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 58,
-        "cost": 42,
-        "momentum": 45,
-        "carbon": 11
-      },
       "report_url": "https://powergridiq.com/rating/poland"
     },
     {
@@ -1899,35 +756,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 46,
       "fundamentals": 49,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: import-dependent Baltic grid."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 52,
-        "availability": 48,
-        "cost": 55,
-        "momentum": 22,
-        "carbon": 84
-      },
       "report_url": "https://powergridiq.com/rating/latvia"
     },
     {
@@ -1939,35 +774,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 48,
       "fundamentals": 48,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: nuclear-backed and reliable."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 50,
-        "cost": 40,
-        "momentum": 25,
-        "carbon": 84
-      },
       "report_url": "https://powergridiq.com/rating/slovakia"
     },
     {
@@ -1979,35 +792,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 44,
       "fundamentals": 47,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: island interconnections and thermal reliance."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 55,
-        "cost": 40,
-        "momentum": 30,
-        "carbon": 53
-      },
       "report_url": "https://powergridiq.com/rating/greece"
     },
     {
@@ -2019,35 +810,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 47,
       "fundamentals": 47,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: nuclear-backed and import-linked, reliable."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 50,
-        "cost": 40,
-        "momentum": 30,
-        "carbon": 71
-      },
       "report_url": "https://powergridiq.com/rating/hungary"
     },
     {
@@ -2059,35 +828,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 47,
       "fundamentals": 47,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: nuclear and coal, adequate."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 55,
-        "cost": 42,
-        "momentum": 25,
-        "carbon": 47
-      },
       "report_url": "https://powergridiq.com/rating/bulgaria"
     },
     {
@@ -2099,35 +846,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 44,
       "fundamentals": 47,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: oil-shale transition and Baltic import dependence."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 48,
-        "cost": 50,
-        "momentum": 28,
-        "carbon": 28
-      },
       "report_url": "https://powergridiq.com/rating/estonia"
     },
     {
@@ -2139,35 +864,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 43,
       "fundamentals": 46,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: import-reliant and hydro-exposed to drought."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 52,
-        "availability": 48,
-        "cost": 45,
-        "momentum": 22,
-        "carbon": 71
-      },
       "report_url": "https://powergridiq.com/rating/croatia"
     },
     {
@@ -2179,41 +882,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 41,
       "fundamentals": 44,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "Winter margins are wind-dependent and have been tight in the past, though the 2025/26 base-case margin of 6.1 GW (about 10%) is the strongest since 2019/20, helped by storage, gas availability and the Greenlink interconnector.",
-          "sources": [
-            {
-              "label": "NESO winter 2025/26 margins",
-              "url": "https://www.neso.energy/neso-sets-out-expectations-strongest-winter-electricity-margins-six-years"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 38,
-        "availability": 45,
-        "cost": 20,
-        "momentum": 82,
-        "carbon": 78
-      },
       "report_url": "https://powergridiq.com/rating/great-britain"
     },
     {
@@ -2225,35 +900,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 43,
       "fundamentals": 43,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: nuclear and hydro, reliable."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 52,
-        "availability": 45,
-        "cost": 38,
-        "momentum": 22,
-        "carbon": 67
-      },
       "report_url": "https://powergridiq.com/rating/slovenia"
     },
     {
@@ -2265,43 +918,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 38,
       "fundamentals": 41,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "High",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "measured",
-          "note": "Delivery reliability on the existing grid is good; the binding problem is connection access, not outages."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "Severe grid congestion: TenneT's offtake waiting list runs to roughly 38 GW across 212 requests, new large loads cannot connect in much of the country, and operators warn of local overloading from 2026. The connection-access dimension is already in the Access pillar; this flags the delivery-expansion and overload risk.",
-          "sources": [
-            {
-              "label": "Netherlands grid congestion (RAP)",
-              "url": "https://www.raponline.org/wp-content/uploads/2024/01/RAP-Pato-Netherlands-gridlock-2024.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "High",
       "outlook": "Negative",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 25,
-        "availability": 40,
-        "cost": 40,
-        "momentum": 70,
-        "carbon": 52
-      },
       "report_url": "https://powergridiq.com/rating/netherlands"
     },
     {
@@ -2313,45 +936,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 69,
       "fundamentals": 74,
+      "reliability_level": "watch",
       "reliability_dock": 5,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 5,
-        "provisional": false,
-        "confidence": "Med",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "event-based",
-          "note": "Record-heat summers have caused localized outages when air-conditioning demand forced generating units offline, and reliability is uneven across the country.",
-          "sources": [
-            {
-              "label": "Record heat causing Saudi power outages",
-              "url": "https://electricityforum.com/news/saudiheatwavecreatingpoweroutages"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Regional disparities between distribution operators; some areas are materially less reliable than others."
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Extreme summer cooling peaks strain supply from May to September; large capacity build is underway."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 78,
-        "availability": 70,
-        "cost": 95,
-        "momentum": 58,
-        "carbon": 12
-      },
       "report_url": "https://powergridiq.com/rating/saudi-arabia"
     },
     {
@@ -2363,35 +954,13 @@
       "tier_name": "Strong",
       "pgiq_rating": 63,
       "fundamentals": 66,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: gas-rich and reliable, with extreme summer cooling peaks."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 68,
-        "availability": 62,
-        "cost": 92,
-        "momentum": 38,
-        "carbon": 30
-      },
       "report_url": "https://powergridiq.com/rating/qatar"
     },
     {
@@ -2403,35 +972,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 57,
       "fundamentals": 61,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: recurring load-shedding through 2023-2024 heat, recovering with capacity additions."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Low",
       "under_review": false,
-      "pillars": {
-        "access": 65,
-        "availability": 58,
-        "cost": 78,
-        "momentum": 35,
-        "carbon": 35
-      },
       "report_url": "https://powergridiq.com/rating/egypt"
     },
     {
@@ -2443,35 +990,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 57,
       "fundamentals": 60,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: summer peak stress under extreme heat."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Low",
       "under_review": false,
-      "pillars": {
-        "access": 60,
-        "availability": 58,
-        "cost": 95,
-        "momentum": 22,
-        "carbon": 2
-      },
       "report_url": "https://powergridiq.com/rating/kuwait"
     },
     {
@@ -2483,35 +1008,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 51,
       "fundamentals": 54,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: large mixed fleet; a 2015 national blackout and hydro-drought exposure."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 62,
-        "availability": 55,
-        "cost": 58,
-        "momentum": 35,
-        "carbon": 39
-      },
       "report_url": "https://powergridiq.com/rating/turkey"
     },
     {
@@ -2523,35 +1026,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 46,
       "fundamentals": 50,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: an isolated grid with tight reserve margins at peak."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Low",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 50,
-        "cost": 55,
-        "momentum": 35,
-        "carbon": 35
-      },
       "report_url": "https://powergridiq.com/rating/israel"
     },
     {
@@ -2563,35 +1044,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 42,
       "fundamentals": 46,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: chronic generation shortfalls and daily outages; among the least reliable large grids (full assessment pending)."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Low",
       "under_review": false,
-      "pillars": {
-        "access": 45,
-        "availability": 30,
-        "cost": 88,
-        "momentum": 18,
-        "carbon": 11
-      },
       "report_url": "https://powergridiq.com/rating/iraq"
     },
     {
@@ -2603,35 +1062,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 54,
       "fundamentals": 57,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: a long, thin grid with transmission constraints between the solar-rich north and demand."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 60,
-        "availability": 60,
-        "cost": 58,
-        "momentum": 45,
-        "carbon": 56
-      },
       "report_url": "https://powergridiq.com/rating/chile"
     },
     {
@@ -2643,35 +1080,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 56,
       "fundamentals": 56,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "modelled",
-          "note": "Modelled read: very high renewables and generally reliable; drought is the tail risk."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 62,
-        "availability": 55,
-        "cost": 58,
-        "momentum": 30,
-        "carbon": 97
-      },
       "report_url": "https://powergridiq.com/rating/uruguay"
     },
     {
@@ -2683,35 +1098,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 51,
       "fundamentals": 55,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: hydro-dominant and exposed to El Nino drought and rationing risk."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 55,
-        "cost": 60,
-        "momentum": 35,
-        "carbon": 77
-      },
       "report_url": "https://powergridiq.com/rating/colombia"
     },
     {
@@ -2723,35 +1116,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 50,
       "fundamentals": 54,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: recurring summer outages and grid underinvestment amid subsidy strain."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Low",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 55,
-        "cost": 58,
-        "momentum": 35,
-        "carbon": 53
-      },
       "report_url": "https://powergridiq.com/rating/argentina"
     },
     {
@@ -2763,35 +1134,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 48,
       "fundamentals": 51,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: hydro-dominant and clean, but drought-exposed on adequacy."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 45,
-        "cost": 55,
-        "momentum": 25,
-        "carbon": 100
-      },
       "report_url": "https://powergridiq.com/rating/costa-rica"
     },
     {
@@ -2803,45 +1152,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 40,
       "fundamentals": 47,
+      "reliability_level": "elevated",
       "reliability_dock": 7,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 7,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "event-based",
-          "note": "The 50Hz east is structurally tight: it issued Japan's first-ever power shortage warnings in 2022, big eastern nuclear (Kashiwazaki-Kariwa) is still returning, and only about 1.2 GW of frequency converters (rising toward 3 GW by 2027) link it to the western surplus, so the east cannot freely borrow firm capacity from the west.",
-          "sources": [
-            {
-              "label": "Tokyo first-ever power shortage warning 2022 (Nippon.com)",
-              "url": "https://www.nippon.com/en/in-depth/d00825/"
-            },
-            {
-              "label": "Japan east-west converter capacity (Wikipedia)",
-              "url": "https://en.wikipedia.org/wiki/Electricity_sector_in_Japan"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 55,
-        "availability": 48,
-        "cost": 22,
-        "momentum": 78,
-        "carbon": 30
-      },
       "report_url": "https://powergridiq.com/rating/japan-east"
     },
     {
@@ -2853,41 +1170,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 51,
       "fundamentals": 51,
+      "reliability_level": "none",
       "reliability_dock": 0,
-      "reliability": {
-        "assessed": true,
-        "level": "none",
-        "dock": 0,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none",
-          "measure": "event-based",
-          "note": "The 60Hz west runs restarted nuclear baseload (Takahama, Ohi, Mihama) and curtails surplus renewables, so forward firm capacity is comfortable; the main national issue is price, not reliability.",
-          "sources": [
-            {
-              "label": "Kansai nuclear restarts and curtailment (IEEFA)",
-              "url": "https://ieefa.org/resources/japans-energy-security-response-creating-renewables-blind-spot"
-            }
-          ]
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 62,
-        "cost": 28,
-        "momentum": 60,
-        "carbon": 45
-      },
       "report_url": "https://powergridiq.com/rating/japan-west"
     },
     {
@@ -2899,35 +1188,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 52,
       "fundamentals": 56,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: multi-year load-shedding eased sharply (long clear stretches in 2025); recovery durability is the watch."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 50,
-        "cost": 70,
-        "momentum": 50,
-        "carbon": 16
-      },
       "report_url": "https://powergridiq.com/rating/south-africa"
     },
     {
@@ -2939,35 +1206,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 52,
       "fundamentals": 55,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: hydro-dominant and exposed to dry-year adequacy risk."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 60,
-        "availability": 55,
-        "cost": 58,
-        "momentum": 30,
-        "carbon": 91
-      },
       "report_url": "https://powergridiq.com/rating/new-zealand"
     },
     {
@@ -2979,41 +1224,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 51,
       "fundamentals": 55,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "AEMO's 2024 ESOO flags NSW reliability gaps around the 2027-28 retirement of Eraring (2,880 MW), pending new dispatchable capacity and delayed transmission.",
-          "sources": [
-            {
-              "label": "AEMO 2024 ESOO",
-              "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2024/2024-electricity-statement-of-opportunities.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Positive",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 52,
-        "cost": 45,
-        "momentum": 78,
-        "carbon": 38
-      },
       "report_url": "https://powergridiq.com/rating/australia-nsw"
     },
     {
@@ -3023,43 +1240,15 @@
       "parent": "australia",
       "tier": 4,
       "tier_name": "Constrained",
-      "pgiq_rating": 46,
+      "pgiq_rating": 48,
       "fundamentals": 52,
-      "reliability_dock": 6,
-      "reliability": {
-        "assessed": true,
-        "level": "elevated",
-        "dock": 6,
-        "provisional": false,
-        "confidence": "Med-High",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "elevated",
-          "measure": "measured",
-          "note": "AEMO identifies about a 1.7 GW reliability gap in Victoria during the 2028 Yallourn exit window unless new dispatchable resources arrive ahead of schedule, with priority transmission delayed.",
-          "sources": [
-            {
-              "label": "AEMO 2024 ESOO (Victoria Yallourn gap)",
-              "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2024/2024-electricity-statement-of-opportunities.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_level": "watch",
+      "reliability_dock": 4,
+      "reliability_assessed": true,
+      "reliability_confidence": "Med-High",
       "outlook": "Stable",
       "confidence": "Med-High",
       "under_review": false,
-      "pillars": {
-        "access": 58,
-        "availability": 50,
-        "cost": 48,
-        "momentum": 58,
-        "carbon": 20
-      },
       "report_url": "https://powergridiq.com/rating/australia-vic"
     },
     {
@@ -3071,41 +1260,13 @@
       "tier_name": "Workable",
       "pgiq_rating": 51,
       "fundamentals": 54,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Med",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "measured",
-          "note": "A younger coal fleet and abundant solar give Queensland a more comfortable near-term balance than the southern states, though ageing-coal reliability and delayed transmission remain watch items.",
-          "sources": [
-            {
-              "label": "AEMO 2024 ESOO",
-              "url": "https://www.aemo.com.au/-/media/files/electricity/nem/planning_and_forecasting/nem_esoo/2024/2024-electricity-statement-of-opportunities.pdf"
-            }
-          ]
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Med",
       "outlook": "Positive",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 60,
-        "availability": 58,
-        "cost": 48,
-        "momentum": 55,
-        "carbon": 30
-      },
       "report_url": "https://powergridiq.com/rating/australia-qld"
     },
     {
@@ -3117,35 +1278,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 35,
       "fundamentals": 39,
+      "reliability_level": "watch",
       "reliability_dock": 4,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 4,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: a tight island grid with priority industrial load and recent large outages (2021-2022) and thin reserve."
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "none"
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "Med",
       "under_review": false,
-      "pillars": {
-        "access": 45,
-        "availability": 40,
-        "cost": 25,
-        "momentum": 45,
-        "carbon": 43
-      },
       "report_url": "https://powergridiq.com/rating/taiwan"
     },
     {
@@ -3157,35 +1296,13 @@
       "tier_name": "Constrained",
       "pgiq_rating": 35,
       "fundamentals": 38,
+      "reliability_level": "watch",
       "reliability_dock": 3,
-      "reliability": {
-        "assessed": true,
-        "level": "watch",
-        "dock": 3,
-        "provisional": false,
-        "confidence": "Low",
-        "delivery_transmission": {
-          "level": "none"
-        },
-        "delivery_distribution": {
-          "level": "none"
-        },
-        "forward_capacity": {
-          "level": "watch",
-          "measure": "modelled",
-          "note": "Modelled read: very reliable delivery, but an import- and gas-constrained island with little domestic resource headroom."
-        }
-      },
+      "reliability_assessed": true,
+      "reliability_confidence": "Low",
       "outlook": "Stable",
       "confidence": "High",
       "under_review": false,
-      "pillars": {
-        "access": 35,
-        "availability": 40,
-        "cost": 25,
-        "momentum": 60,
-        "carbon": 42
-      },
       "report_url": "https://powergridiq.com/rating/singapore"
     }
   ]
